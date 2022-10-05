@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Afrah";
+  src: url("./assets/fonts/Afrah/Afrah-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Afrah";
+  src: url("./assets/fonts/Afrah/Afrah-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+:root {
+  --yellow: #f4af00;
+  --white: #f7f8fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #aa381e;
+}
+
+.navbar {
+  margin-right: 3.125rem;
+  margin-top: 3.125rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul:first-child > li {
+  margin-right: 20px;
+}
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 24px;
+  font-family: "Afrah";
+  font-weight: 400;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 119px;
+  margin-right: 4.5rem;
+}
+video {
+  width: 100%;
+  height: 600px;
+  border-top: 10px solid var(--yellow);
+}
+
+.linemiddle {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 865px;
+  transform: rotate(180deg);
+  background-color: var(--yellow);
+  left: 765px;
+  bottom: 25px;
+}
+
+.linebottom {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 765px;
+  background-color: var(--yellow);
+  transform: rotate(90deg);
+  top: 450px;
+  left: 850px;
+}
+
+.herotext {
+  text-align: center;
+  margin-left: 15rem;
+}
+
+.herotext h1 {
+  font-family: "Afrah";
+  color: var(--white);
+  font-size: 73px;
+  font-weight: 400;
+}
+
+.herotext a {
+  color: var(--white);
+  font-size: 23px;
+  font-family: "Krub";
+  text-decoration: none;
+}
+
+.herotext a:hover {
+  color: var(--yellow);
+}
+
+/* Food Component */
+
+.foodtext {
+  margin-top: 37px;
+  text-align: center;
+  font-family: "Krub";
+  font-size: 29px;
+  color: var(--white);
+}
+
+.foodline {
+  height: 1px;
+  width: 95%;
+  background-color: var(--yellow);
+  margin-top: 27px;
+  margin-bottom: 33px;
+}
+
+.foodintro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foodtitle {
+  color: var(--white);
+  font-family: "Afrah";
+  font-size: 80px;
+  text-align: center;
+}
+
+.foodinfo {
+  display: flex;
+  margin-top: 44px;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.foodinfo .description,
+.menu {
+  width: 47.5%;
+  color: var(--white);
+  font-family: "Krub";
+  font-size: 35px;
+}
+
+.foodinfo .menu {
+  margin-left: 25px;
+}
+/* Place Component */
+
+.spotcontainer {
+  display: flex;
+  margin-top: 94px;
+  justify-content: space-between;
+}
+
+.spotcontainer .images,
+.spottext {
+  height: 574px;
+}
+
+.box {
+  width: 708px;
+  height: 470px;
+  background-color: var(--yellow);
+  position: relative;
+  z-index: 1;
+  margin-left: 37px;
+}
+
+.spotimg {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  z-index: 2;
+  bottom: 320px;
+  left: 195px;
+  border: 5px solid black;
+}
+
+.spottext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spottitle {
+  font-size: 60px;
+  font-family: "Afrah";
+  color: var(--white);
+  margin-bottom: 55px;
+  margin-right: 52px;
+}
+
+.spotdescription {
+  font-size: 32px;
+  font-family: "Krub";
+  color: var(--white);
+  height: 450px;
+  width: 800px;
+  margin-right: 52px;
+}
+
+@media (max-width: 1895px) {
+  /* Hero component */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+  .herotext {
+    position: relative;
+    right: 7.5rem;
+    bottom: 3.125rem;
+  }
+
+  .herovideo {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .linemiddle {
+    position: absolute;
+    left: 27.5rem;
+    top: 1.25rem;
+    height: 48.125rem;
+  }
+
+  .linebottom {
+    position: absolute;
+    top: 23.125rem;
+    left: 43.125rem;
+  }
+
+  /* Place component */
+  .box {
+    width: 37.5rem;
+  }
+
+  .spotimg {
+    width: 37.5rem;
+  }
+
+  .spottext {
+    width: 34.375rem;
+    margin-right: 0.625rem;
+  }
+  .spottitle {
+    font-size: 1.875rem;
+  }
+
+  .spotdescription {
+    font-size: 1.563rem;
+    width: 37.5rem;
+  }
+}
