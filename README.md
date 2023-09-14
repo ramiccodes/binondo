@@ -1,5 +1,5 @@
 # binondo
-This is the first website that I utilized my knowledge of React. (Finished October 5, 2022)
+This is the website that I utilized my knowledge of React. (Finished October 5, 2022)
 
 
 Video credits to Pexels creators:
